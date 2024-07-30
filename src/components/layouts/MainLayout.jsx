@@ -4,7 +4,7 @@ import Navbar from "../fragments/Navbar";
 
 export default function MainLayout({ children }) {
     return (
-        <div className='flex w-full min-h-screen max-h-screen overflow-hidden'>
+        <div className='flex w-full min-h-screen max-h-screen overflow-hidden font-Poppins'>
             <div className=''>
                 <Aside />
             </div>
