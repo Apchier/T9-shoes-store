@@ -4,7 +4,7 @@ import { IoIosNotificationsOutline } from "react-icons/io";
 
 export default function Navbar() {
     return (
-        <div className="flex items-center w-full h-[70px] bg-gray-300 py-2 pr-2">
+        <div className="flex items-center w-full h-[75px] bg-gray-200 py-2 pr-2">
             <div className="flex w-full justify-between border-l-2 border-black px-2 py-2">
                 <div className="flex w-1/4 justify-around text-2xl items-center cursor-pointer ">
                     <span className="hover:font-semibold hover:text-black text-gray-500 duration-200 delay-100 ease-in-out">Product</span>
