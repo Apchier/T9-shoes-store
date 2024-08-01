@@ -3,7 +3,7 @@ import { BiMessageDetail } from "react-icons/bi";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import NavLink from "../elements/NavLink";
 import ButtonPrimary from "../elements/ButtonPrimary";
-import ImageProfile from "../elements/ImageProfile";
+import ImageProfile from "../elements/NavProfile";
 
 export default function Navbar() {
     return (

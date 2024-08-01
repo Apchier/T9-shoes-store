@@ -8,7 +8,7 @@ import AsideLink from "../elements/AsideLink";
 
 export default function Aside() {
     return (
-        <aside className="flex flex-col items-center p-2 w-[115px] bg-gray-200 h-screen">
+        <aside className="flex flex-col items-center p-2 bg-gray-200 h-screen">
             <div className="flex text-[3rem] font-semibold">
                 <h1 className="text-yellow-600">A</h1>
                 <h1>J</h1>

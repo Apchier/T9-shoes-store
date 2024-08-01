@@ -5,11 +5,11 @@ import Navbar from "../fragments/Navbar";
 
 export default function MainLayout({ children }) {
     return (
-        <div className='flex w-full min-h-screen max-h-screen overflow-hidden font-Poppins'>
-            <div className=''>
+        <div className='flex min-w-screen max-w-screen min-h-screen max-h-screen overflow-hidden font-Poppins'>
+            <div className='w-[6%]'>
                 <Aside />
             </div>
-            <div className='flex flex-col w-full bg-gray-200'>
+            <div className='flex flex-col w-[94%] bg-gray-200'>
                 <div>
                     <Navbar />
                 </div>
