@@ -2,7 +2,9 @@ import { FaRegUserCircle } from "react-icons/fa";
 import { IoIosAlert } from "react-icons/io";
 import { FaArrowUp } from "react-icons/fa6";
 import { LuArrowDownUp } from "react-icons/lu";
-
+import ProductCard from "../elements/ProductsCard";
+import ButtonPrimary from "../elements/ButtonPrimary";
+import FilterUpload from "../elements/FilterUpload";
 
 
 export default function ProductList() {
@@ -15,169 +17,24 @@ export default function ProductList() {
                         <span className="text-xl">Recent Product</span>
                     </div>
                     <div className="flex w-full gap-3 justify-end">
-                        <select name="" id="" className="outline-none p-2">
-                            <option value="Last-7-Days">Last 7 Days</option>
-                            <option value="Last-30-Days">Last 30 Days</option>
-                            <option value="Last-90-Days">Last 90 Days</option>
-                        </select>
-                        <button className="px-4 py-2 bg-blue-500 rounded-md text-white">New Post</button>
+                        <FilterUpload />
+                        <ButtonPrimary text="New Post" />
                     </div>
                 </div>
-                <div className="flex w-full overflow-x-scroll gap-7 mt-5 flex-grow">
-                    <div className="flex-shrink-0">
-                        <img className="rounded-xl" src="https://placehold.co/170x200" alt="" />
-                        <div className="text-xl font-semibold mt-5">Nike Air</div>
-                        <div className="flex items-center gap-4 mt-1">
-                            <span className="text-red-400">$180.00</span>
-                            <span className="line-through">$289.00</span>
-                        </div>
-                        <div className="flex items-center justify-between mt-4">
-                            <span className="p-1 flex items-center justify-center w-[60px] h-[30px] bg-blue-200 rounded-xl">Colors</span>
-                            <div className="flex gap-1 items-center">
-                                <span className="block bg-black w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                                <span className="block bg-red-500 w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                                <span className="block bg-orange-500 w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                                <span className="block bg-yellow-500 w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex-shrink-0">
-                        <img className="rounded-xl" src="https://placehold.co/170x200" alt="" />
-                        <div className="text-xl font-semibold mt-5">Nike Air</div>
-                        <div className="flex items-center gap-4 mt-1">
-                            <span className="text-red-400">$180.00</span>
-                            <span className="line-through">$289.00</span>
-                        </div>
-                        <div className="flex items-center justify-between mt-4">
-                            <span className="p-1 flex items-center justify-center w-[60px] h-[30px] bg-blue-200 rounded-xl">Colors</span>
-                            <div className="flex gap-1 items-center">
-                                <span className="block bg-black w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                                <span className="block bg-red-500 w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                                <span className="block bg-orange-500 w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                                <span className="block bg-yellow-500 w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex-shrink-0">
-                        <img className="rounded-xl" src="https://placehold.co/170x200" alt="" />
-                        <div className="text-xl font-semibold mt-5">Nike Air</div>
-                        <div className="flex items-center gap-4 mt-1">
-                            <span className="text-red-400">$180.00</span>
-                            <span className="line-through">$289.00</span>
-                        </div>
-                        <div className="flex items-center justify-between mt-4">
-                            <span className="p-1 flex items-center justify-center w-[60px] h-[30px] bg-blue-200 rounded-xl">Colors</span>
-                            <div className="flex gap-1 items-center">
-                                <span className="block bg-black w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                                <span className="block bg-red-500 w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                                <span className="block bg-orange-500 w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                                <span className="block bg-yellow-500 w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex-shrink-0">
-                        <img className="rounded-xl" src="https://placehold.co/170x200" alt="" />
-                        <div className="text-xl font-semibold mt-5">Nike Air</div>
-                        <div className="flex items-center gap-4 mt-1">
-                            <span className="text-red-400">$180.00</span>
-                            <span className="line-through">$289.00</span>
-                        </div>
-                        <div className="flex items-center justify-between mt-4">
-                            <span className="p-1 flex items-center justify-center w-[60px] h-[30px] bg-blue-200 rounded-xl">Colors</span>
-                            <div className="flex gap-1 items-center">
-                                <span className="block bg-black w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                                <span className="block bg-red-500 w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                                <span className="block bg-orange-500 w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                                <span className="block bg-yellow-500 w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex-shrink-0">
-                        <img className="rounded-xl" src="https://placehold.co/170x200" alt="" />
-                        <div className="text-xl font-semibold mt-5">Nike Air</div>
-                        <div className="flex items-center gap-4 mt-1">
-                            <span className="text-red-400">$180.00</span>
-                            <span className="line-through">$289.00</span>
-                        </div>
-                        <div className="flex items-center justify-between mt-4">
-                            <span className="p-1 flex items-center justify-center w-[60px] h-[30px] bg-blue-200 rounded-xl">Colors</span>
-                            <div className="flex gap-1 items-center">
-                                <span className="block bg-black w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                                <span className="block bg-red-500 w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                                <span className="block bg-orange-500 w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                                <span className="block bg-yellow-500 w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex-shrink-0">
-                        <img className="rounded-xl" src="https://placehold.co/170x200" alt="" />
-                        <div className="text-xl font-semibold mt-5">Nike Air</div>
-                        <div className="flex items-center gap-4 mt-1">
-                            <span className="text-red-400">$180.00</span>
-                            <span className="line-through">$289.00</span>
-                        </div>
-                        <div className="flex items-center justify-between mt-4">
-                            <span className="p-1 flex items-center justify-center w-[60px] h-[30px] bg-blue-200 rounded-xl">Colors</span>
-                            <div className="flex gap-1 items-center">
-                                <span className="block bg-black w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                                <span className="block bg-red-500 w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                                <span className="block bg-orange-500 w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                                <span className="block bg-yellow-500 w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex-shrink-0">
-                        <img className="rounded-xl" src="https://placehold.co/170x200" alt="" />
-                        <div className="text-xl font-semibold mt-5">Nike Air</div>
-                        <div className="flex items-center gap-4 mt-1">
-                            <span className="text-red-400">$180.00</span>
-                            <span className="line-through">$289.00</span>
-                        </div>
-                        <div className="flex items-center justify-between mt-4">
-                            <span className="p-1 flex items-center justify-center w-[60px] h-[30px] bg-blue-200 rounded-xl">Colors</span>
-                            <div className="flex gap-1 items-center">
-                                <span className="block bg-black w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                                <span className="block bg-red-500 w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                                <span className="block bg-orange-500 w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                                <span className="block bg-yellow-500 w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex-shrink-0">
-                        <img className="rounded-xl" src="https://placehold.co/170x200" alt="" />
-                        <div className="text-xl font-semibold mt-5">Nike Air</div>
-                        <div className="flex items-center gap-4 mt-1">
-                            <span className="text-red-400">$180.00</span>
-                            <span className="line-through">$289.00</span>
-                        </div>
-                        <div className="flex items-center justify-between mt-4">
-                            <span className="p-1 flex items-center justify-center w-[60px] h-[30px] bg-blue-200 rounded-xl">Colors</span>
-                            <div className="flex gap-1 items-center">
-                                <span className="block bg-black w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                                <span className="block bg-red-500 w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                                <span className="block bg-orange-500 w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                                <span className="block bg-yellow-500 w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex-shrink-0">
-                        <img className="rounded-xl" src="https://placehold.co/170x200" alt="" />
-                        <div className="text-xl font-semibold mt-5">Nike Air</div>
-                        <div className="flex items-center gap-4 mt-1">
-                            <span className="text-red-400">$180.00</span>
-                            <span className="line-through">$289.00</span>
-                        </div>
-                        <div className="flex items-center justify-between mt-4">
-                            <span className="p-1 flex items-center justify-center w-[60px] h-[30px] bg-blue-200 rounded-xl">Colors</span>
-                            <div className="flex gap-1 items-center">
-                                <span className="block bg-black w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                                <span className="block bg-red-500 w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                                <span className="block bg-orange-500 w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                                <span className="block bg-yellow-500 w-[6px] h-[6px] rounded-full p-[6px]"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <ProductCard>
+                    <ProductCard.CardProduct latest="New" hot="Hot" img="https://placehold.co/170x200" title="Nike Air" price="$180.00" discount="$289.00" />
+                    <ProductCard.CardProduct latest="New" hot="Hot" img="https://placehold.co/170x200" title="Nike Air" price="$180.00" discount="$289.00" />
+                    <ProductCard.CardProduct latest="New" hot="Hot" img="https://placehold.co/170x200" title="Nike Air" price="$180.00" discount="$289.00" />
+                    <ProductCard.CardProduct latest="New" hot="Hot" img="https://placehold.co/170x200" title="Nike Air" price="$180.00" discount="$289.00" />
+                    <ProductCard.CardProduct latest="New" hot="Hot" img="https://placehold.co/170x200" title="Nike Air" price="$180.00" discount="$289.00" />
+                    <ProductCard.CardProduct latest="New" hot="Hot" img="https://placehold.co/170x200" title="Nike Air" price="$180.00" discount="$289.00" />
+                    <ProductCard.CardProduct latest="New" hot="Hot" img="https://placehold.co/170x200" title="Nike Air" price="$180.00" discount="$289.00" />
+                    <ProductCard.CardProduct latest="New" hot="Hot" img="https://placehold.co/170x200" title="Nike Air" price="$180.00" discount="$289.00" />
+                    <ProductCard.CardProduct latest="New" hot="Hot" img="https://placehold.co/170x200" title="Nike Air" price="$180.00" discount="$289.00" />
+                    <ProductCard.CardProduct latest="New" hot="Hot" img="https://placehold.co/170x200" title="Nike Air" price="$180.00" discount="$289.00" />
+                    <ProductCard.CardProduct latest="New" hot="Hot" img="https://placehold.co/170x200" title="Nike Air" price="$180.00" discount="$289.00" />
+                    <ProductCard.CardProduct latest="New" hot="Hot" img="https://placehold.co/170x200" title="Nike Air" price="$180.00" discount="$289.00" />
+                </ProductCard>
             </div>
             <div className="w-[20%] flex flex-col justify-between pl-16 p-2">
                 <span className="p-1 flex items-center justify-center w-[55px] h-[55px] bg-green-300 rounded-full">
