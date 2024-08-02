@@ -12,7 +12,7 @@ const CardProduct = ({latest, hot, img , title, price, discount }) => {
         <div className="flex-shrink-0 relative rounded-[3vh]">
             <div className="flex absolute top-0 left-0 items-center ">
                 <div className="bg-blue-500 text-white px-2 py-1 rounded-tl-xl rounded-br-xl z-[1]">{latest}</div>
-                <div className="bg-red-500 text-white px-4 py-1 -ml-3 rounded-bl-lg rounded-br-lg rounded-tr-lg flex items-center justify-center ">{hot}</div>
+                <div className="bg-red-500 text-white px-4 py-1 -ml-3 rounded-br-xl flex items-center justify-center ">{hot}</div>
             </div>
             <img className="rounded-xl" src={img} alt="" />
             <div className="text-xl font-semibold mt-5">{title}</div>

@@ -1,4 +1,5 @@
 import nike1 from "../../../public/img/nike1.png"
+import FilterUpload from "../elements/FilterUpload"
 
 export default function Hero() {
     return (
@@ -36,15 +37,11 @@ export default function Hero() {
                         <div className="w-3 h-6 rounded-[4px] bg-purple-300"></div>Product Views
                     </span>
                     <div className="relative">
-                        <select className="bg-transparent border-2 border-white rounded-md px-2 py-1 text-sm">
-                            <option>Last 7 days</option>
-                            <option>Last 30 days</option>
-                            <option>Last 90 days</option>
-                        </select>
+                        <FilterUpload />
                     </div>
                 </div>
                 <div className="flex h-full justify-between items-end">
-                    <div className="flex w-[10%] h-full flex-col justify-between text-sm py-1">
+                    <div className="flex w-[10%] h-full flex-col justify-between text-sm pb-7">
                         <p>30</p>
                         <p>25</p>
                         <p>20</p>
